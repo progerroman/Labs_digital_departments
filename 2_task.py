@@ -7,7 +7,7 @@ increase = 0.05  # Ежемесячный рост цен
 months = 0  # Счетчик месяцев
 
 # Пока есть деньги в подушке безопасности
-while money_capital > 0:
+while True:
     deficit = spend - salary  # Рассчитываем дефицит за месяц
     money_capital -= deficit  # Уменьшаем подушку безопасности на дефицит
     if money_capital < 0:
