@@ -45,7 +45,7 @@ class Programmer:
         True
         """
         if not isinstance(succeed, bool):
-            raise TypeError("Error Type: Class programmer,Type succeed")
+            raise TypeError("Error Type: Class programmer, Type succeed")
         return succeed
 class Student:
     def __init__(self, course: int, count_of_retakes: int, average_mark: float):
@@ -107,13 +107,13 @@ class Site:
         >>> site = Site(120, 6)
         """
         if not isinstance(users, int):
-            raise TypeError("Error Type: Class site")
+            raise TypeError("Error Type: Class site, Type users")
         if not isinstance(rating, int):
-            raise TypeError("Error Type: Class site")
+            raise TypeError("Error Type: Class site, Type rating")
         if(users < 0):
-            raise ValueError("Error Value: Class site")
+            raise ValueError("Error Value: Class site, Value users")
         if not (1 <= rating <= 10):
-            raise ValueError("Error Value: Class site")
+            raise ValueError("Error Value: Class site, Value rating")
         self.users = users
         self.rating = rating
     def add_advertisments(self, ads: int) -> int:
@@ -127,7 +127,7 @@ class Site:
         >>> site.add_advertisments(120)
         """
         if not isinstance(ads, int):
-            raise TypeError("Error Type: Class site")
+            raise TypeError("Error Type: Class site, Type ads")
         if ads <= 0:
             raise ValueError("Error Value: Class site, Value ads")
         pass
